@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Keyboard Disabler
+GenericName=Utilities
+StartupNotify=true
+Comment=Dissable and Enable Laptop Keyboard
+Exec=bash -c /home/dir/Downloads/App/Keyboard-Disabler/keyboard-disabler.sh
+Icon=/home/dir/Downloads/App/Keyboard-Disabler/keyboard_off.png
