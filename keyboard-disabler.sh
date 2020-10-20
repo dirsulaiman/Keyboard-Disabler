@@ -1,8 +1,8 @@
 #!/bin/fish
 
 set current_dir (pwd)
-set icon_on (echo "$current_dir/keyboard_on.png")
-set icon_off (echo "$current_dir/keyboard_off.png")
+set icon_on (echo "$current_dir/icons/keyboard_on.png")
+set icon_off (echo "$current_dir/icons/keyboard_off.png")
 
 set run_xinput (xinput list | grep 'AT Translated Set 2 keyboard')
 

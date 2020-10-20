@@ -1,8 +1,8 @@
 #!/bin/fish
 
 set current_dir (pwd)
-set icon_on (echo "$current_dir/touchpad_on.png")
-set icon_off (echo "$current_dir/touchpad_off.png")
+set icon_on (echo "$current_dir/icons/touchpad_on.png")
+set icon_off (echo "$current_dir/icons/touchpad_off.png")
 
 set run_xinput (xinput list | grep -i 'Touchpad')
 
