@@ -12,7 +12,6 @@ set keyboard_id (string match -r '=.+' $run_xinput | string match -r '\d+')
 set keyboard_status (string match -r -i '\[\w*' $run_xinput | string sub --start=2)
 #echo $keyboard_status
 
-
 function enable_keyboard
     set xinput (xinput list | grep 'Virtual core keyboard')
     set keyboard_master (string match -r '=.+' $xinput | string match -r '\d')
@@ -26,7 +25,6 @@ function disable_keyboard
     echo 'Keyboard Disabled'
     notify-send -i $icon_off "Keyboard Disabled"
 end
-
 
 if test $keyboard_status = 'floating'
     enable_keyboard
