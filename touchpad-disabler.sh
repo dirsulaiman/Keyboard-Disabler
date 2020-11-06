@@ -12,7 +12,6 @@ set touchpad_id (string match -r '=.+' $run_xinput | string match -r '\d+')
 set touchpad_status (string match -r -i '\[\w*' $run_xinput | string sub --start=2)
 #echo $touchpad_status
 
-
 function enable_touchpad
     set xinput (xinput list | grep -i 'Virtual core pointer')
     set touchpad_master (string match -r '=.+' $xinput | string match -r '\d')
@@ -26,7 +25,6 @@ function disable_touchpad
     echo 'Touchpad Disabled'
     notify-send -i $icon_off "Touchpad Disabled"
 end
-
 
 if test $touchpad_status = 'floating'
     enable_touchpad
