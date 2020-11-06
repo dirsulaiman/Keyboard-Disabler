@@ -1,7 +1,16 @@
-# Keyboard-Disabler
-Disable and enable Laptop internal keyboard
+# Keyboard-Touchpad Disabler
+Disable and enable internal keyboard
 
-### Manually Disable/Enable Keyboard/Touchpad
+[!Guillef](https://ubuntu-mate.community/t/enable-disable-keyboard-or-laptop-touchpad-with-bash-scripts/15722)
+
+### Installation 
+Just download or glone with git and run 
+```sh
+$ git clone https://github.com/dirsulaiman/Keyboard-Disabler.git
+$ 
+```
+
+### Manually Disable/Enable Keyboard-Touchpad
 xinput list
 
 disable
@@ -9,3 +18,6 @@ disable
 
 enable
 'xinput reattach $id $master'
+
+### License
+Source file: [BSD License](https://github.com/dirsulaiman/Keyboard-Disabler/blob/master/LICENSE)
